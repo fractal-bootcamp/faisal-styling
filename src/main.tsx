@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Task from "./components/Task";
-//import TaskList from "./components/TaskList";
+import TaskList from "./components/TaskList";
+import MessageThread from "./components/MessageThread";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,14 @@ const router = createBrowserRouter([
   {
     path: "/task",
     element: <Task />
+  },
+  {
+    path: "/taskList",
+    element: <TaskList />
+  },
+  {
+    path: "/messages",
+    element: <MessageThread />
   },
 ]);
 
